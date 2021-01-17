@@ -6,6 +6,7 @@ const words = document.querySelector('.paragraph');
 
 let doorKnocks = 1;
 const doorKnockSound = new Audio('./doorKnock.mp3');
+const doorKnock2 = new Audio('./DOOR_052.mp3')
 const doorOpenSound = new Audio('./doorOpen.mp3');
 const womenLaugh = new Audio("./PEOP_091.mp3");
 let isDoorOpen = false;
@@ -34,11 +35,11 @@ document.querySelector('.section1').addEventListener('click', function () {
         doorKnocks++;
         words.innerHTML = "Leave me be! I do not like being bothered."
         isDoorOpen = false;
-        doorKnockSound.play();
+        doorKnock2.play();
 
     } else if (doorKnocks > 3 ) {
         womenLaugh.play();
         doorKnocks++;
-        words.innerHTML = "You've released the Witch! Return her now before its too late."
+        words.innerHTML = "You've released the Witch! Return her before its too late."
     }
 })
