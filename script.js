@@ -11,7 +11,6 @@ const womenLaugh = new Audio("./PEOP_091.mp3");
 let isDoorOpen = false;
 
 document.querySelector('.section1').addEventListener('click', function () {
-    doorKnockSound.play();
     console.log(`door has been knocked ${doorKnocks} times`);
     if (doorKnocks === 3) {
         isDoorOpen = true;
