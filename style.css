@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+  /* position: relative; */
+}
+
+.section1 {
+  /* background-color: white; */
+  position: absolute;
+  
+  background-image: url('./closedDoorBlack.svg');
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  transition: all ease-in-out 2s;
+  transform: translate(-50%, -50%);
+}
+/* .section1:hover {
+    background-image: url('./openDoor.svg');
+    left: 50%;
+    height: 400px;
+} */
+
+
+.paragraph {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
