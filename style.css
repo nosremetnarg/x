@@ -14,8 +14,8 @@ body {
 .section1 {
   /* background-color: white; */
   position: absolute;
-  
-  background-image: url('./closedDoorBlack.svg');
+
+  background-image: url("./closedDoorBlack.svg");
   top: 50%;
   left: 50%;
   height: 400px;
@@ -29,32 +29,28 @@ body {
     height: 400px;
 } */
 
-.words {
-
-}
 .paragraph {
-    position: absolute;
-    display: block;
-    text-align: center;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1001px){
-    .paragraph {
-        top: 90%;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .paragraph {
-        top: 90%;
-    }
-}
-@media screen and (max-width: 380px){
-.paragraph {
+@media screen and (min-width: 1001px) {
+  .paragraph {
     top: 90%;
+  }
 }
+
+@media screen and (max-width: 1000px) {
+  .paragraph {
+    top: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .paragraph {
+    top: 90%;
+  }
 }
