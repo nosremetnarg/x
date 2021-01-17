@@ -9,6 +9,7 @@ const doorKnockSound = new Audio('./doorKnock.mp3');
 const doorKnock2 = new Audio('./DOOR_052.mp3')
 const doorOpenSound = new Audio('./doorOpen.mp3');
 const womenLaugh = new Audio("./PEOP_091.mp3");
+const demonLaugh = new Audio("./laugh.mp3");
 let isDoorOpen = false;
 
 document.querySelector('.section1').addEventListener('click', function () {
@@ -37,9 +38,15 @@ document.querySelector('.section1').addEventListener('click', function () {
         isDoorOpen = false;
         doorKnock2.play();
 
-    } else if (doorKnocks > 3 ) {
+    } else if (doorKnocks > 4) {
+        section1.style.backgroundImage = 'url(./human-skullWhite.svg)';
+        demonLaugh.play();
+        words.innerHTML = "The Beast will never die..."
+
+    }
+    else if (doorKnocks > 3 ) {
         womenLaugh.play();
         doorKnocks++;
         words.innerHTML = "You've released the Witch! Return her before its too late."
-    }
+    } 
 })
