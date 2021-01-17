@@ -38,6 +38,7 @@ document.querySelector('.section1').addEventListener('click', function () {
 
     } else if (doorKnocks > 3 ) {
         womenLaugh.play();
+        doorKnocks++;
         words.innerHTML = "You've released the Witch! Return her now before its too late."
     }
 })
