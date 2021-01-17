@@ -42,8 +42,19 @@ body {
 
 }
 
+@media screen and (min-width: 1001px){
+    .paragraph {
+        top: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .paragraph {
+        top: 90%;
+    }
+}
 @media screen and (max-width: 380px){
 .paragraph {
-    top: 80%;
+    top: 90%;
 }
 }
