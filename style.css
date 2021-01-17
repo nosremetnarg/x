@@ -29,11 +29,21 @@ body {
     height: 400px;
 } */
 
+.words {
 
+}
 .paragraph {
     position: absolute;
-    top: 66%;
+    display: block;
+    text-align: center;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+@media screen and (max-width: 380px){
+.paragraph {
+    top: 80%;
+}
 }
